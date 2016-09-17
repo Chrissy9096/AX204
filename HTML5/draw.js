@@ -15,7 +15,7 @@ var ctx = c.getContext("2d");
  var x = 0;
  var y = 0;
  var width = 200;
- var height =300;
+ var height =200;
  ctx.fillRect (x,y,width,height);
  while (width > 0){
  	x += 10;
