@@ -7,9 +7,9 @@ var score= 0;
 function preload(){
 game.load.image('sky','assets/sky.png');
 game.load.image('ground', 'assets/platform.png')
-game.load.image('star', 'asset/star.png');
-game.load.spritesheet('dude','asset/dude.png',32,48)
-game.load.spritesheet('baddie','asset/baddie.png',32,32)
+game.load.image('star', 'assets/star.png');
+game.load.spritesheet('dude','assets/dude.png',32,48)
+game.load.spritesheet('baddie','assets/baddie.png',32,32)
 }
 
 function create(){
@@ -19,7 +19,7 @@ function create(){
 	game.add.sprite(0,0,'sky');
 	//physics groupe
 	platforms = game.add.physicsGroup();
-	pladforms.enableBody=true;
+	platforms.enableBody=true;
 	//ground
 	var ground= platforms.create(0,game.world.height - 64,'ground');
 	ground.scale.setTo(2,2);
@@ -59,8 +59,8 @@ cursors = game.imput.keyboard.createCursorKeys();
 
 function update(){
 	//make payer sprite collide wth platform
-	game.physics.archade.collide(player,platforms);
-	game.physics.archade.collide(Baddie,platforms);
+	game.physics.arcade.collide(player,platforms);
+	game.physics.arcade.collide(Baddie,platforms);
 	// player sppeed reset to 0
 	player.body.velocity.x = 0;
 	//keyboard events
