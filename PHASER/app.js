@@ -51,11 +51,12 @@ function create(){
 	Baddie.body.bounce.y = 0.4;
 	Baddie.body.gravity.y = 300;
 	Baddie.body.collideWorldBounds;
+
+	//keyboard events
+	cursors = game.imput.keyboard.createCursorKeys();
 }
 
 
-//keyboard events
-cursors = game.imput.keyboard.createCursorKeys();
 
 function update(){
 	//make payer sprite collide wth platform
