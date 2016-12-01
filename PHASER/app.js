@@ -61,7 +61,7 @@ function create(){
 function update(){
 	//make payer sprite collide wth platform
 	game.physics.arcade.collide(player,platforms);
-	game.physics.arcade.collide(Baddie,platforms);
+	game.physics.arcade.collide(baddie,platforms);
 	// player sppeed reset to 0
 	player.body.velocity.x = 0;
 	//keyboard events
