@@ -42,15 +42,15 @@ function create(){
 	player.body.collideWorldBounds;
 
 	//Baddie
-	Baddie = game.add.sprite(750,20, 'baddie');
+	baddie = game.add.sprite(750,20, 'baddie');
 	//animate the sprite
-	Baddie.animations.add('left',[0,1], 10, true);
-	Baddie.animations.add('right',[2,3], 10, true);
-	game.physics.arcade.enable(Baddie);
+	baddie.animations.add('left',[0,1], 10, true);
+	baddie.animations.add('right',[2,3], 10, true);
+	game.physics.arcade.enable(baddie);
 	//physics propertys
-	Baddie.body.bounce.y = 0.4;
-	Baddie.body.gravity.y = 300;
-	Baddie.body.collideWorldBounds;
+	baddie.body.bounce.y = 0.4;
+	baddie.body.gravity.y = 300;
+	baddie.body.collideWorldBounds;
 
 	//keyboard events
 	cursors = game.input.keyboard.createCursorKeys();
