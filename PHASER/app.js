@@ -84,9 +84,9 @@ function update(){
 //Enimy AI
 if (baddie.x > 749){
 	baddie.animations.play('left');
-	baddie.body.veocity.z = -120;
+	baddie.body.velocity.x = -120;
 }else if (baddie.x < 405){
 	baddie.animations.play('right');
-	baddie.body.veocity.z = 120;
+	baddie.body.velocity.x = 120;
     }
 }
